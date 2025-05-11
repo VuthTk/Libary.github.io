@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            font-size: 4.5rem;
+        }
+
+        p {
+            font-size: 3rem;
+        }
+
+        .light {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            filter: blur(70px);
+            background-color: white;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="light"></div>
+    <h1>Stop love someone alone</h1>
+    <p>
+        I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I
+        love
+        you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you,
+        I
+        love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love
+        you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you,
+        I
+        love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love
+        you, I love you.I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I
+        love
+        you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you,
+        I
+        love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love
+        you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you,
+        I
+        love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love
+        you, I love you.I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I
+        love
+        you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you,
+        I
+        love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love
+        you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you,
+        I
+        love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love
+        you, I love you.I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I
+        love
+        you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you,
+        I
+        love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love
+        you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you,
+        I
+        love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love you, I love
+        you, I love you.
+
+    </p>
+
+    <script>
+        const light = document.querySelector(".light");
+
+        function moveLight(event) {
+            let x = event.clientX;
+            let y = event.clientY;
+
+            light.style.left = `${x}px`;
+            light.style.top = `${y}px`;
+        }
+
+        document.addEventListener("mousemove", moveLight);
+    </script>
+</body>
+
+</html>
